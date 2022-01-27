@@ -65,7 +65,8 @@ jobs:
       - name: Load custom configuration
         env:
           CONFIG_FILE: "K2P.config"
-          DIY_SH: "diy.sh"
+          DIY_P1_SH: "diy-part1.sh"
+          DIY_P2_SH: "diy-part2.sh"
         run: |
           [ -e files ] && mv files openwrt/files
           [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
